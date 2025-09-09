@@ -3,15 +3,31 @@
 #include "calc.h"
 
 void read_two_numbers(int* num1, int* num2) {
+	int result;
+
 	printf("Input first number: ");
-	scanf("%d", num1);    
+	scanf("%d", num1);
+	if (result != 1) {
+		printf("Error! Input is not a number!");
+		exit(1);
+	}
+
+    
  	printf("Input second number: ");
 	scanf("%d", num2);
+	if (result != 1) {
+		printf("Error! Input is not a number!");
+		exit(1);
+	}
 }
 
 void read_one_number(int* num) {
 	printf("Input number: ");
-	scanf("%d", num);    
+	int result = scanf("%d", num);
+	if (result != 1) {
+		printf("Error! Input is not a number!");
+		exit(1);
+	}
 }
 
 int main(void) {
@@ -53,7 +69,7 @@ int main(void) {
 			break;
 
 		default:
-			printf("Invalid operation!\n");
+			printf("Error! Invalid operation!\n");
 			exit(1);
 	}
 

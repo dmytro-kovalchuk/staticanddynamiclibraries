@@ -1,7 +1,11 @@
 #include "calc.h"
+#include <stdlib.h>
 
 int sqroot(int n) {
-	if (n == 0 || n == 1) return n;
+	if (n < 0) {
+		printf("Error! Root of a negative number!");
+		exit(1);
+	} else if (n == 0 || n == 1) return n;
 
 	int low = 0, high = n;
 
