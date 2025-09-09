@@ -49,7 +49,7 @@ int main(void) {
 	
 		case 'r':
 			read_one_number(&num1);
-			result = sqrt(num1);
+			result = sqroot(num1);
 			break;
 
 		default:

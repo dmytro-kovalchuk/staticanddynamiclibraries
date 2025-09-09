@@ -1,6 +1,6 @@
 #include "calc.h"
 
-int sqrt(int n) {
+int sqroot(int n) {
 	if (n == 0 || n == 1) return n;
 
 	int low = 0, high = n;
