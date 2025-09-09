@@ -1,5 +1,5 @@
 #include "calc.h"
 
-int multiply(int a, in b) {
+int multiply(int a, int b) {
 	return a * b;
 }
