@@ -6,7 +6,7 @@ void read_two_numbers(int* num1, int* num2) {
 	int result;
 
 	printf("Input first number: ");
-	scanf("%d", num1);
+	result = scanf("%d", num1);
 	if (result != 1) {
 		printf("Error! Input is not a number!");
 		exit(1);
@@ -14,7 +14,7 @@ void read_two_numbers(int* num1, int* num2) {
 
     
  	printf("Input second number: ");
-	scanf("%d", num2);
+	result = scanf("%d", num2);
 	if (result != 1) {
 		printf("Error! Input is not a number!");
 		exit(1);
