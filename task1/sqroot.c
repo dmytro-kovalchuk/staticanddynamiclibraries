@@ -1,4 +1,5 @@
 #include "calc.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 int sqroot(int n) {
