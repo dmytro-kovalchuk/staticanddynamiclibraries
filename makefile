@@ -13,7 +13,7 @@ CALC_EXEC = $(BUILD_DIR)/calc
 
 
 
-all: $(CALC_EXEC)
+all: $(BUILD_DIR) $(CALC_EXEC)
 
 $(BUILD_DIR):
 	mkdir -p $@
@@ -21,7 +21,7 @@ $(BUILD_DIR):
 $(CALC_EXEC): $(CALC_LIB)
 	$(CC) $(CALC_DIR)/main.c -L . -l calc -o $(CALC_EXEC)
 
-$(BUILD_DIR)/%.c: $(CALC_DIR)/%.c
+$(BUILD_DIR)/%.o: $(CALC_DIR)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(CALC_LIB): $(CALC_OBJ)
