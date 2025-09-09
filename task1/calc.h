@@ -11,4 +11,6 @@ int divide(int a, int b);
 
 int factorial(int n);
 
+int sqrt(int n);
+
 #endif
